@@ -64,7 +64,25 @@ namespace TDD_HomeWork_Day02.Tests
             //assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod()]
+        [TestCategory("哈利波特優惠")]
+        public void 一二三四集各買了一本價格應為320()
+        {
+            //arrange
+            var books = new List<Book>
+            {
+                new Book {書名 = "哈利波特", 集數 = 1, 價格 = 100},
+                new Book {書名 = "哈利波特", 集數 = 2, 價格 = 100},
+                new Book {書名 = "哈利波特", 集數 = 3, 價格 = 100},
+                new Book {書名 = "哈利波特", 集數 = 4, 價格 = 100}
+            };
+            var target = new ShoppingCart();
+            var expected = 270;
+            //act
+            var actual = target.Pay(books);
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
 
-        
     }
 }
