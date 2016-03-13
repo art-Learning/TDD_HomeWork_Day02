@@ -33,6 +33,9 @@ namespace TDD_HomeWork_Day02
                 case 4:
                     discount = 0.8;
                     break;
+                case 5:
+                    discount = 0.75;
+                    break;
                 default:
                     discount = 1;
                     break;
