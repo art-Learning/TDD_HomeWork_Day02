@@ -77,7 +77,7 @@ namespace TDD_HomeWork_Day02.Tests
                 new Book {書名 = "哈利波特", 集數 = 4, 價格 = 100}
             };
             var target = new ShoppingCart();
-            var expected = 270;
+            var expected = 320;
             //act
             var actual = target.Pay(books);
             //assert
